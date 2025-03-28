@@ -1,0 +1,30 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #c0e6a0;
+  margin: 0;
+  padding: 0;
+}
+#farm-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.plot {
+  width: 100px;
+  height: 86px;
+  background-image: url('plot_iso.png');
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.plot.carrot {
+  background-image: url('carrot_iso.png');
+}
+#info-bar {
+  margin: 10px;
+  font-weight: bold;
+}

@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Isometrikus Farm</title>
+</head>
+<body>
+  <div id="character-select">
+    <h1>Válassz karaktert</h1>
+    <button onclick="selectCharacter('Gergő')">Gergő</button>
+    <button onclick="selectCharacter('Dóri')">Dóri</button>
+  </div>
+  <div id="game" style="display:none;">
+    <div id="info-bar">
+      <span id="character-name"></span> | Pénz: <span id="money">100</span>
+    </div>
+    <div id="farm-grid"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
